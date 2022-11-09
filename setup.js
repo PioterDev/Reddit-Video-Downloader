@@ -19,11 +19,7 @@ async function main() {
     }    
     var batchDir = await rl.question('Where do you want the batch file to be located? (C:\\Windows\\System32) ')
     if(batchDir !== undefined)batchDir = "C:/Windows/System32"
-    var stream = fs.createWriteStream(`./reddit-download.bat`)
-    stream.once('open', (fd)=> {
-    	stream.write(`@echo off\nnode "${srcDir}\\index.js" %*`)
-    	stream.end()
-    })
+    fs.writeFileSync('./reddit-download.bat', `@echo off\nnode "${srcDir}\\index.js" %*`)
     fs.rename('./reddit-download.bat', `${batchDir}\\reddit-download.bat`, (err)=> {
     	if(err)throw err;
     })
