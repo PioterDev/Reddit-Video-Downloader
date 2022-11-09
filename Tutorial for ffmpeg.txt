@@ -1,0 +1,13 @@
+1. Go to https://github.com/BtbN/FFmpeg-Builds/releases
+2. Locate the latest build
+3. Download "ffmpeg-master-latest-win64-gpl.zip"
+4. Extract the zip file
+5. Go to the zipfolder/bin and move ffmpeg.exe to the script directory 
+OR extract only bin/ffmpeg.exe to the script directory (it doesn't matter, 2nd method will save some time tho)
+
+5.5 If you want to, you can move it to PATH directory (like C:\Windows\System32) for some other uses, but it requires administrator
+
+You have to do this manually because there is no way the script would do all of this automatically,
+and uploading ffmpeg with the package is pointless.
+
+
