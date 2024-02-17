@@ -13,4 +13,6 @@ But for comfort, I recommend installing the script on your computer. To do this,
 
 After you've installed it, open your command prompt and type `reddit-download [link to the reddit post with video]`.
 
+The script operates in the console's directory, not in the directory where script files are located, meaning if you're in `/path/to/dir/`, it will create `/path/to/dir/downloads/` folder if there isn't one.
+
 Currently, only Windows system is supported. I will add support for Linux and MacOS later.
