@@ -16,3 +16,5 @@ async function main() {
     console.log(`The script is ready to use, you can now run the command from the terminal.`)
     process.exit(0)
 }
+
+main()
