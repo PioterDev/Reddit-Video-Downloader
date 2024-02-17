@@ -40,7 +40,7 @@ async function main(){
     heightCheck1 = getResolution(heightCheck1)
     let heightCheck = (heightCheck1 == videoHeight.toString() ? videoHeight : Number(heightCheck1))
     let videoUrl = `${baseUrl}_${heightCheck}.mp4`
-    let audioUrl = `${baseUrl}_audio.mp4`
+    let audioUrl = `${baseUrl}_AUDIO_128.mp4`
     try {
         let dir = fs.readdirSync('./downloads')
     }
